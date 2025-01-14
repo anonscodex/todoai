@@ -1,0 +1,12 @@
+# Ignore virtual environment
+todoai/
+.env
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore IDE/editor files (if using VSCode, PyCharm, etc.)
+.vscode/
+.idea/
