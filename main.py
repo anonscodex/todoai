@@ -16,7 +16,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://dailyplanner-gules.vercel.app/"],  # Replace "*" with specific origins like ["http://localhost:5173"]
+    allow_origins=["https://dailyplanner-gules.vercel.app"],  # Replace "*" with specific origins like ["http://localhost:5173"]
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
