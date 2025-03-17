@@ -16,7 +16,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://dailyplanner-gules.vercel.app"],  # Replace "*" with specific origins like ["http://localhost:5173"]
+    allow_origins=["http://localhost:3000/"],  # Replace "*" with specific origins like ["http://localhost:5173"]
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
@@ -31,7 +31,7 @@ llm = ChatGroq(
 # Define the prompt template
 prompt = PromptTemplate(
     input_variables=["to_do_list"],  # Ensure this matches the request body
-    template="You are a productivity coach. Here's a user's to-do list:\n{to_do_list}\n\nPlan their day with time allocations and tips."
+    template="You are a investor coach. Here's a user's to-do list:\n{to_do_list}\n\nPlan their day with time allocations and tips."
 )
 
 # Create an LLMChain
